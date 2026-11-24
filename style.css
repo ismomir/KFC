@@ -7,6 +7,10 @@
 
 body {
     background-color: #d9d9d9;
+      width: 100%;
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: 100px;
 }
 
 /* Основной контейнер по центру */
@@ -150,4 +154,110 @@ body {
     right: 90px;
     top: 2px;
     z-index: 1;
+}
+/* +++++++++++++++++++++++++++ */
+/* Стандартный контейнер по центру */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Верхняя красная полоса */
+.red-top {
+    height: 55px;
+    background-color: #f02c22;
+    position: relative;
+}
+
+/* Желтая кнопка MENU на границе */
+.menu-btn {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -65px;
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #ffc72c;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Нижний белый блок */
+.menu-section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 40px 30px 40px;
+}
+
+.arrow-left {
+    width: 30px;
+    display: block;
+}
+
+.arrow-right {
+    width: 30px;
+    display: block;
+    transform: rotate(180deg);
+}
+
+/* Ряд карточек */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+}
+
+.card {
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.card img {
+    width: 115px;
+    display: block;
+}
+
+/* Картинки без встроенной подписи */
+.card-img {
+    width: 105px;
+    margin: 0 auto 6px auto;
+}
+
+.card-title {
+    display: block;
+    color: #000000;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Красная полоска под активной карточкой (WINGS BUCKET) */
+.card.active {
+    border-bottom: 2px solid #f02c22;
+}
+.menu-btn {
+    position: relative;
+    bottom: 204px;
+    left: 50%;
+    margin-left: -70px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ffb81c;
+    color: #ffffff;
+    
+   
+    font-size: 14px;
+    
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(255, 184, 28, 0.45);
 }
