@@ -2,63 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KFC</title>
+    <title>KFC Campaign</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="hero">
-
-            <!-- Шапка -->
+    <!-- 1. Главный красный баннер -->
+    <div class="hero-section">
+        <div class="container">
             <div class="header">
-                
+                <a href="#" class="logo-link">
                     <img src="kfc.png" alt="KFC" class="logo-img">
-             
+                </a>
 
-                <div class="nav">
-                    <p>ABOUT US</p>
-                    <p>FIND US</p>
-                    <p>ALL CAMPAIGNS</p>
+                <div class="nav-links">
+                    <a href="#">ABOUT US</a>
+                    <a href="#">FIND US</a>
+                    <a href="#">ALL CAMPAIGNS</a>
+                </div>
 
-                        <img src="akun.png" alt="Account">
-                    
-                    
-                        <img src="basket.png" alt="Basket">
-                
+                <div class="header-icons">
+                    <img src="akun.png" alt="Account" class="icon-akun">
+                    <img src="basket.png" alt="Basket" class="icon-basket">
                 </div>
             </div>
 
-            <!-- Основной блок -->
             <div class="hero-content">
-                <div class="left">
-                    <p>JAGONYA AYAM<br>BUCKET MENU<br>CAMPAIGN</p>
+                <div class="hero-text">
+                    <h1>JAGONYA AYAM<br>BUCKET MENU<br>CAMPAIGN</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna id ut velit convallis nec sit felis. Non non sagittis aenean enim tellus erat semper. Enim a eros urna aliquam, tempor, tortor.</p>
-
-                    <p href="#" class="btn-order">ORDER NOW</p>
-
-                    <div class="dots">
-                        <span class="dot"></span>
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
+                    <a href="#" class="order-link">ORDER NOW</a>
                 </div>
 
-                <div class="right">
-                    <img src="image 4.png" alt="Chicken" class="chicken">
-                    <img src="image 2.png" alt="Bucket" class="bucket">
-                    <img src="image 3.png" alt="Fries" class="fries">
-                    <img src="Group 3.png" alt="Price" class="price">
+                <div class="hero-visual">
+                    <img src="Group 4.png" alt="Bucket Menu" class="hero-bucket">
+                    <img src="Group 3.png" alt="RP 79.999" class="hero-price-badge">
                 </div>
             </div>
 
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="menu-tab-wrap">
+            <a href="#" class="menu-btn">MENU</a>
         </div>
     </div>
-    <!-- +++++++++++++++++++++++ -->
 
-    <!-- Нижний белый блок со слайдером -->
-        <div class="menu-section">
+    <!-- 2. Полоса со слайдером меню -->
+    <div class="menu-section">
+        <div class="container menu-inner">
             <img src="chap.png" alt="Prev" class="arrow-left">
 
             <div class="cards">
@@ -90,9 +87,222 @@
                 </div>
             </div>
 
-            <img src="chap.png" alt="Next" class="arrow-right">
+            <img src="rost.png" alt="Next" class="arrow-right">
         </div>
-        <p class="menu-btn">MENU</p>
+    </div>
+
+    <!-- 3. Секция акций и комбо -->
+    <div class="offers-section">
+        <img src="Rectangle 11.jpg" alt="Soft Beige Background" class="bg-rect">
+        <img src="image 32.png" alt="KFC Background" class="bg-kfc">
+
+        <div class="container offers-container">
+            <div class="row-top">
+                <div class="card-small">
+                    <span class="ribbon-new">NEW</span>
+                    <div class="card-text">
+                        <h2>ANY DAY<br>OFFERS</h2>
+                        <p>KRISPY BURGER</p>
+                        <div class="price-red">Rp. 20,999</div>
+                    </div>
+                    <div class="card-visual">
+                        <div class="circle-yellow"></div>
+                        <img src="image 17.png" alt="Krispy Burger" class="img-burger">
+                    </div>
+                </div>
+
+                <div class="card-small card-red">
+                    <div class="card-text">
+                        <h2>ALA KARTE<br>SPECIAL</h2>
+                        <p>KOLONEL YAKINIKU</p>
+                        <div class="price-yellow">Rp. 35,999</div>
+                    </div>
+                    <div class="card-visual">
+                        <img src="image 18.png" alt="Kolonel Yakiniku" class="img-bowl">
+                    </div>
+                </div>
+
+                <div class="card-small">
+                    <span class="ribbon-new">NEW</span>
+                    <div class="card-text">
+                        <h2>SPECIAL<br>COMBO BOX</h2>
+                        <p>KRISPY BURGER</p>
+                        <div class="price-red">Rp.55,999</div>
+                    </div>
+                    <div class="card-visual">
+                        <div class="circle-yellow"></div>
+                        <img src="image 19.png" alt="Zuper Box" class="img-box">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-bottom">
+                <div class="card-wide">
+                    <div class="wide-text">
+                        <h2>SPECIAL COMBO<br>DUOS</h2>
+                        <p>MAKAN BARENG SAMA SI DIA CUMAN</p>
+                        <div class="wide-price">
+                            <span class="rp">Rp.</span>
+                            <span class="num">50,999</span>
+                        </div>
+                    </div>
+                    <div class="wide-visual">
+                        <img src="image 21.png" alt="Bucket" class="duos-bucket">
+                        <img src="image 25.png" alt="Fanta" class="duos-fanta">
+                        <img src="image 23.png" alt="Burger" class="duos-burger">
+                        <img src="image 4.png" alt="Chicken" class="duos-chicken">
+                        <img src="image 24.png" alt="Side" class="duos-side">
+                    </div>
+                </div>
+
+                <div class="card-wide">
+                    <div class="wide-text">
+                        <h2>SPECIAL COMBO<br>FAMILY</h2>
+                        <p>MAKAN BARENG KELUARGA</p>
+                        <div class="wide-price">
+                            <span class="rp">Rp.</span>
+                            <span class="num">190,999</span>
+                        </div>
+                    </div>
+                    <div class="wide-visual">
+                        <img src="image 27.png" alt="Family Bucket" class="family-bucket">
+                        <img src="image 25.png" alt="Fanta" class="family-fanta">
+                        <img src="image 17.png" alt="Burger" class="family-burger">
+                        <img src="image 22.png" alt="Chicken" class="family-chicken">
+                        <img src="image 24.png" alt="Side" class="family-side">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Жёлтый блок с мобильным приложением -->
+    <div class="app-section">
+        <div class="container app-box">
+            <div class="app-phones">
+                <div class="phone phone-front">
+                    
+             <img src="Screen  1.png" alt="Signature Box" class="phone-food">
+                </div>
+
+                <div class="phone phone-back">
+                    
+             <img src="Screen 2.png" alt="Combo Box" class="phone-foodd">
+                
+                </div>
+            </div>
+
+            <div class="app-info">
+                <h2>Now With Your Favorite<br>Kfc Mobile Application<br>In Your Pocket</h2>
+                <div class="store-links">
+                    
+                        <img src="Frame 4.png" alt="App Store and Google Play" class="store-img">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Отзывы клиентов -->
+    <div class="stories-section">
+        <div class="container">
+            <div class="stories-header">
+                <h2>Real Stories from<br>Real Customers</h2>
+                <p>Get inspired by these stories</p>
+            </div>
+
+            <div class="stories-grid">
+                <div class="stories-col">
+                    <div class="story-card">
+                        <p class="story-text">Convallis sapien vitae amet, gravida in neque. Lorem facilisis iaculis varius tristique porttitor ante non.</p>
+                        <div class="story-author">Jane Cooper</div>
+                        <div class="story-handle">@jane_c</div>
+                    </div>
+
+                    <div class="story-card">
+                        <p class="story-text">Lacus mi gravida bibendum convallis. Felis fusce mi sollicitudin vel adipiscing dictum.</p>
+                        <div class="story-author">Kristin Watson</div>
+                        <div class="story-handle">@kristin_w</div>
+                    </div>
+                </div>
+
+                <div class="stories-col">
+                    <div class="story-card">
+                        <p class="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor pellentesque a tempus sit tempor facilisis molestie. Lacus mi gravida bibendum convallis. Felis fusce mi sollicitudin vel adipiscing dictum.</p>
+                        <div class="story-author">Floyd Miles</div>
+                        <div class="story-handle">@floyd_miles</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Красная полоса контактов -->
+    <div class="contact-bar">
+        <div class="container contact-inner">
+            <img src="kfc.png" alt="KFC" class="contact-logo">
+
+            <div class="contact-phones">
+                <div class="contact-item">
+                    <img src="Vectorr.png" alt="WhatsApp" class="contact-icon">
+                    <span>0823 -1267 - 7711</span>
+                </div>
+
+                <div class="contact-item">
+                    <img src="Frame.png" alt="Phone" class="contact-icon">
+                    <span>(021) 889 - 0011</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <img src="face.png" alt="Facebook" class="social-icon">
+                <img src="twit.png" alt="Twitter" class="social-icon">
+                <img src="inst.png" alt="Instagram" class="social-icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Тёмный футер -->
+    <footer class="footer">
+        <img src="image 31.png" alt="KFC" class="footer-bg">
+
+        <div class="container footer-content">
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <p>About us</a>
+                    <p>Blog</p>
+                    <p>Contact us</p>
+                    <p>Pricing</p>
+                    <p>Testimonials</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <p>Help center</p>
+                    <p>Terms of service</p>
+                    <p>Legal</p>
+                    <p>Privacy policy</p>
+                    <p>Status</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Stay up to date</h3>
+                    <div class="subscribe-box">
+                        <input type="email" placeholder="Your email address">
+                        
+                            <img src="Vector.png" alt="Send" class="send-icon">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2022 KFCKU. All rights reserved</span>
+                <span>Terms &amp; Conditions | Privacy Policy | Sitemap | Disclaimer</span>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

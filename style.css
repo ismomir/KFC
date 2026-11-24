@@ -6,209 +6,180 @@
 }
 
 body {
-    background-color: #d9d9d9;
-      width: 100%;
-    width: 1120px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
-/* Основной контейнер по центру */
-.container {
-    width: 100%;
-    width: 1120px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-
-/* Красный блок */
-.hero {
-    background-color: #f02c22;
-    color: #ffffff;
-    padding: 32px 75px 45px 75px;
-}
-
-/* Шапка */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.logo-img {
-    width: 82px;
-    display: block;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    gap: 26px;
-}
-
-.nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.icon-link {
-    display: inline-block;
-}
-
-.icon-link img {
-    width: 34px;
-    display: block;
-}
-
-/* Основной контент */
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.left {
-    width: 47%;
-}
-
-.left h1 {
-    font-size: 40px;
-    line-height: 1.15;
-    margin-bottom: 18px;
-}
-
-.left p {
-    font-size: 13px;
-    line-height: 1.55;
-    margin-bottom: 28px;
-    color: #ffe2e0;
-}
-
-.btn-order {
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: none;
-    border: 1.5px solid #ffffff;
-    border-radius: 25px;
-    padding: 11px 36px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* Индикаторы */
-.dots {
-    display: flex;
-    gap: 7px;
-    margin-top: 42px;
-}
-
-.dot {
-    width: 10px;
-    height: 4px;
-    background-color: #f68680;
-    border-radius: 2px;
-}
-
-.dot.active {
-    width: 22px;
     background-color: #ffffff;
+      width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Правая часть с изображениями */
-.right {
-    width: 50%;
-    height: 330px;
-    position: relative;
-}
-
-.bucket {
-    width: 285px;
-    position: absolute;
-    left: 55px;
-    top: 8px;
-    z-index: 2;
-}
-
-.chicken {
-    width: 115px;
-    position: absolute;
-    left: 85px;
-    bottom: 70px;
-    z-index: 1;
-}
-
-.fries {
-    width: 115px;
-    position: absolute;
-    right: 150px;
-    bottom: 30px;
-    z-index: 3;
-}
-
-.price {
-    width: 125px;
-    position: absolute;
-    right: 90px;
-    top: 2px;
-    z-index: 1;
-}
-/* +++++++++++++++++++++++++++ */
-/* Стандартный контейнер по центру */
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Верхняя красная полоса */
-.red-top {
-    height: 55px;
-    background-color: #f02c22;
+/* 1. Главный красный баннер */
+.hero-section {
+    background-color: #ef2b22;
+    color: #ffffff;
+    padding: 25px 20px 35px 20px;
     position: relative;
 }
 
-/* Желтая кнопка MENU на границе */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.logo-img {
+    width: 85px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-akun,
+.icon-basket {
+    width: 30px;
+    display: block;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-text {
+    width: 48%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffe5e3;
+    margin-bottom: 24px;
+    max-width: 420px;
+}
+
+.order-link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 9px 24px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.hero-visual {
+    width: 48%;
+    position: relative;
+    height: 310px;
+}
+
+.hero-bucket {
+    width: 310px;
+    display: block;
+    margin-left: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-price-badge {
+    width: 115px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 25px;
+}
+
+.dot {
+    width: 8px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 2px;
+}
+
+.dot.active {
+    width: 18px;
+    background-color: #ffffff;
+}
+
+.menu-tab-wrap {
+    position: relative;
+    height: 0;
+}
+
 .menu-btn {
     position: absolute;
-    bottom: -18px;
+    bottom: -53px;
     left: 50%;
-    margin-left: -65px;
-    width: 130px;
-    height: 36px;
-    line-height: 36px;
+    margin-left: -70px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    background-color: #ffc72c;
+    background-color: #ffc114;
     color: #ffffff;
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
     border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(255, 193, 20, 0.45);
+    z-index: 5;
 }
 
-/* Нижний белый блок */
+/* 2. Полоса со слайдером меню */
 .menu-section {
     background-color: #ffffff;
+    padding: 45px 20px 28px 20px;
+}
+
+.menu-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 40px 30px 40px;
 }
 
-.arrow-left {
-    width: 30px;
-    display: block;
-}
-
+.arrow-left,
 .arrow-right {
-    width: 30px;
+    width: 14px;
     display: block;
-    transform: rotate(180deg);
 }
 
-/* Ряд карточек */
 .cards {
     display: flex;
     justify-content: space-between;
@@ -226,7 +197,6 @@ body {
     display: block;
 }
 
-/* Картинки без встроенной подписи */
 .card-img {
     width: 105px;
     margin: 0 auto 6px auto;
@@ -239,25 +209,508 @@ body {
     font-weight: bold;
 }
 
-/* Красная полоска под активной карточкой (WINGS BUCKET) */
 .card.active {
-    border-bottom: 2px solid #f02c22;
+    border-bottom: 2px solid #ef2b22;
 }
-.menu-btn {
+
+/* 3. Секция акций и комбо */
+.offers-section {
     position: relative;
-    bottom: 204px;
-    left: 50%;
-    margin-left: -70px;
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: #ffb81c;
+    background-color: #f6ebe6;
+    padding: 55px 20px;
+    overflow: hidden;
+}
+
+.bg-rect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.45;
+    z-index: 0;
+}
+
+.bg-kfc {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    width: 600px;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+.offers-container {
+    position: relative;
+    z-index: 2;
+}
+
+.row-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.card-small {
+    width: 32%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 175px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-red {
+    background-color: #ef2b22;
     color: #ffffff;
+}
+
+.ribbon-new {
+    position: absolute;
+    top: 10px;
+    right: -4px;
+    background-color: #ef2b22;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.card-text {
+    width: 52%;
+}
+
+.card-text h2 {
+    font-size: 18px;
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.card-text p {
+    font-size: 10px;
+    color: #666666;
+    margin-bottom: 14px;
+}
+
+.card-red .card-text p {
+    color: #ffe2e0;
+}
+
+.price-red {
+    display: inline-block;
+    background-color: #ef2b22;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 15px;
+}
+
+.price-yellow {
+    display: inline-block;
+    background-color: #ffc72c;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 15px;
+}
+
+.card-visual {
+    width: 46%;
+    height: 120px;
+    position: relative;
+}
+
+.circle-yellow {
+    width: 95px;
+    height: 95px;
+    background-color: #ffc72c;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 1;
+}
+
+.img-burger {
+    width: 115px;
+    position: relative;
+    z-index: 2;
+    margin-top: 12px;
+}
+
+.img-bowl {
+    width: 110px;
+    display: block;
+    margin: 5px auto 0 auto;
+}
+
+.img-box {
+    width: 125px;
+    position: relative;
+    z-index: 2;
+    margin-top: 15px;
+}
+
+.row-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.card-wide {
+    width: 49%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 185px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.wide-text {
+    width: 46%;
+}
+
+.wide-text h2 {
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.wide-text p {
+    font-size: 10px;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+.wide-price {
+    color: #ef2b22;
+    font-weight: 900;
+}
+
+.wide-price .rp {
+    font-size: 11px;
+    display: block;
+}
+
+.wide-price .num {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.wide-visual {
+    width: 52%;
+    height: 145px;
+    position: relative;
+}
+
+.duos-bucket,
+.family-bucket {
+    width: 115px;
+    position: absolute;
+    left: 90px;
+    top: 0;
+    z-index: 2;
+}
+
+.duos-fanta,
+.family-fanta {
+    width: 80px;
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    z-index: 3;
+}
+
+.duos-burger,
+.family-burger {
+    width: 72px;
+    position: absolute;
+    left: 60px;
+    bottom: 5px;
+    z-index: 4;
+}
+
+.duos-chicken,
+.family-chicken {
+    width: 90px;
+    position: absolute;
+    right: 60px;
+    bottom: 18px;
+    z-index: 3;
+}
+
+.duos-side,
+.family-side {
+    width: 52px;
+    position: absolute;
+    right: 100px;
+    bottom: 2px;
+    z-index: 4;
+}
+
+/* 4. Жёлтый блок приложения */
+.app-section {
+    background-color: #ffc114;
     
-   
+    position: relative;
+    z-index: 3;
+
+}
+
+.app-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.app-phones {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.phone-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 3px;  
+}
+
+.phone-food{
+width: 250px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.phone-foodd {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    right: 50px;
+    
+}
+
+.app-info {
+    max-width: 420px;
+    color: #ffffff;
+}
+
+.app-info h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.store-img {
+    width: 250px;
+    display: block;
+}
+
+/* 5. Отзывы клиентов */
+.stories-section {
+    background-color: #f6ebe6;
+    padding: 65px 20px;
+}
+
+.stories-header {
+    margin-bottom: 30px;
+}
+
+.stories-header h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.stories-header p {
+    font-size: 13px;
+    color: #666666;
+}
+
+.stories-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.stories-col {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.story-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.story-text {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.story-author {
+    font-size: 13px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.story-handle {
+    font-size: 11px;
+    color: #888888;
+}
+
+/* 6. Красная полоса контактов */
+.contact-bar {
+    background-color: #ef2b22;
+    color: #ffffff;
+    padding: 22px 20px;
+}
+
+.contact-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-logo {
+    width: 75px;
+    display: block;
+}
+
+.contact-phones {
+    display: flex;
+    gap: 35px;
     font-size: 14px;
-    
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(255, 184, 28, 0.45);
+    font-weight: bold;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-icon {
+    width: 18px;
+    display: block;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-links a {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 14px;
+    display: block;
+}
+
+/* 7. Тёмный футер */
+.footer {
+    background-color: #1f2226;
+    color: #ffffff;
+    padding: 50px 20px 30px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-bg {
+    position: absolute;
+    right: -120px;
+    bottom: 0px;
+    width: 400px;
+    opacity: 0.14;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-cols {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 45px;
+}
+
+.footer-col h3 {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.footer-col a {
+    display: block;
+    color: #b8bec6;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    background-color: #3a3f47;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+.subscribe-box input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    outline: none;
+    width: 170px;
+}
+
+.send-link {
+    margin-bottom: 0 !important;
+    padding-left: 8px;
+}
+
+.send-icon {
+    width: 10px;
+    display: block;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #9aa0a8;
+    border-top: 1px solid #32373e;
+    padding-top: 18px;
 }
